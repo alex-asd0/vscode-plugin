@@ -1,0 +1,31 @@
+{
+  "name": "time-tracker",
+  "displayName": "Time Tracker",
+  "description": "Track coding time and keystrokes",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "time-tracker.showStatistics",
+        "title": "Time Tracker: Show Statistics"
+      },
+      {
+        "command": "time-tracker.resetStatistics",
+        "title": "Time Tracker: Reset Statistics"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./"
+  }
+}
